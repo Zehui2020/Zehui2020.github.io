@@ -1,0 +1,358 @@
+/*Set common rules shared by everything using this CSS file*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/*Set all anchor tags in header to*/
+.header a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+/*Set header to*/
+.header{
+    user-select: none;
+    background-color: black;
+    display: flex;
+    height: 3em;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Set expand menu to */
+.expand{
+    width: 100%;
+    height: 0em;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.4em;
+    
+    /* hide overflow content */
+    overflow: hidden;
+    transition: height 200ms ease-in-out;
+}
+
+/* move element to left slightly */
+.move-left{
+    margin-left: 40px;
+}
+
+/* move element to up slightly */
+.move-up{
+    margin-bottom: 8px;
+}
+
+/*Set home anchor tag to*/
+.header-home{
+    margin-left: 3em;
+    cursor: pointer;
+}
+
+/*Set instruments,profession,simulations (others) anchor tag to*/
+.header-others{
+    display:flex;
+    margin-right: 3em;
+    gap: 3em;
+}
+
+.instrumentBtn, .professionBtn, .simulationsBtn{
+    cursor: pointer;
+}
+
+/*Set menu button to*/
+.menu{
+    display: none;
+    transition: transform 200ms ease-in-out;
+}
+
+/*Set banner container to*/
+.percussion-family-container{
+    user-select: none;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+/*Set banner image to*/
+.percussion-family-container img{ 
+    width: 100%;
+    transition: 200ms opacity ease-in-out;
+}
+
+/* Set slideshow details (image & text) to */
+.slideshow-details
+{
+    position:absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+
+    transition: opacity 0.5s ease;
+}
+
+/*Set banner text (h1) to*/
+#percussion-family-text{
+    color: white;   
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+    font-size: 50px;
+}
+
+/*Set the controls of slideshow to*/
+.controls{
+    display: flex;
+    gap: 5px;
+}
+
+.controls img{
+    cursor: pointer;
+    height: 40px;
+}
+
+/*Set main-container to*/
+.main-container{
+    display: flex;
+    background-color: rgb(7, 0, 44);
+}
+
+/*Set container to*/
+.container{
+    display: flex;
+    align-items: center;
+    max-width: 65vw;
+    margin: 50px auto;
+}
+
+/*Same as .container but change the margin y-value*/
+.container-1{
+    display: flex;
+    align-items: center;
+    max-width: 65vw;
+    margin: 20px auto;
+}
+
+/*Set container-2 to*/
+.container-2{
+    display: flex;
+    height: 30.1em;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+/*Set image inside container to*/
+.container-img{
+    display: flex;
+    width: 300px;
+}
+
+/*Same as .container-img but change the width value*/
+.container-img-1{
+    display: flex;
+    width: 200px;
+}
+
+/*Set anchor tag inside container to*/
+.container-content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 2em;
+    gap: 1em;
+    color: white
+}   
+
+/*Set about percussion content container's anchor tag to*/
+.container-content h1{
+    color: gold;
+}
+
+/*Set about percussion content container's anchor tag to*/
+.container-content a{
+    color: lightblue;
+}
+
+/*Change the bg of container with pro id to a darker shade */
+#pro{
+    background-color: rgb(6, 0, 38);
+}
+
+/*Change the bg of container with xylo id to a darker shade*/
+#xylo{
+    background-color: rgb(4, 0, 32);
+}
+
+/*Set title to*/
+.title-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 6em;
+    color: rgb(221, 177, 48);
+    font-size: 24px;
+    background-color: rgb(7, 0, 44);
+} 
+
+/*Set header of content container to*/
+.container-content-header{
+    display: flex;
+    align-items: center;    
+}
+
+/*Set image in header of content container to*/
+.container-content-header img{
+    border: 2px solid white;
+    height: 100px;
+    width: auto;
+}
+
+/*Set h1 in header of content container to*/
+.container-content-header h1{
+    margin-left: 0.5em;
+}
+
+/*Set h1 in header of content container to*/
+.xylophone{
+    display: flex;
+    height: 32.6em;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    text-transform: uppercase;
+    background-color: rgb(7, 0, 44);
+}
+
+/*Style each key in xylophone simulation to*/
+.xylophone .key{
+    cursor: pointer;
+    width: 3em;
+    background: linear-gradient(rgb(192, 192, 192) 96%, #a4a4a4 4%);
+    border-radius: 8px;
+    margin: auto 1em;
+    position: relative;
+    user-select: none;
+}
+
+/*Set the height of each key in the xylophone*/
+.xylophone .c-key{
+    height: 20em;
+}
+
+.xylophone .d-key{
+    height: 18em;
+}
+
+.xylophone .e-key{
+    height: 16em;
+}
+
+.xylophone .f-key{
+    height: 14em;
+}
+
+.xylophone .g-key{
+    height: 12em;
+}
+
+.xylophone .a-key{
+    height: 10em;
+}
+
+.xylophone .b-key{
+    height: 8em;
+}
+
+.xylophone .h-c-key{
+    height: 6em;
+}
+
+/*Position the text of the xylophone key*/
+.xylophone span{
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.listen-btn
+{   
+    display: flex;
+    width: 5em;
+    height: 2em;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    border: solid gold;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 800px){
+
+    /* hide the expanded menu when returning to screen size > 800px */
+    .expand{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 800px){
+    /* don't diplay anchor tags for instruments, profession and simulation */
+    .header-others{
+        display: none;
+        flex-direction: column;
+    }
+
+    /* show the menu button */
+    .menu{
+        display: block;
+        cursor: pointer;
+    }
+
+    /* shift home anchor tag to center of the header */
+    .header{
+        justify-content: center;
+    }
+
+    /* style the new home anchor tag */
+    .header-home{
+        margin-left: 0px;
+        width: 800px;
+        text-align: center;
+    }
+
+    /* change font size of the text in slideshow */
+    #percussion-family-text{
+        font-size: 30px;
+    }
+
+    /* change the size of the controls for slideshow */
+    .controls img
+    {
+        height: 25px;
+    }
+
+    /*Align everything to center*/
+    .main-container
+    {
+        align-items: center;
+    }
+
+    /* change flex direction to column so everything renders in a straight line downwards */
+    .container, .container-1
+    {
+        flex-direction: column;
+    }
+
+    /* create some space between the image and text and align everything to center */
+    .container-content{
+        margin-top: 15px;
+        align-items: center;
+        text-align: center;
+    }
+}
