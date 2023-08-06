@@ -480,7 +480,8 @@
     }
 
     .percussion-family-container{ 
-        height: 41vh;
+        height: 25vh;
+        text-align: center;
     }
 
     /* change font size of the text in slideshow */
