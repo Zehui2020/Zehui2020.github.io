@@ -180,28 +180,66 @@
         </div>
         <div class = "main-container">
             <div class = "container-1">
-                <img class = "container-img" src = "images/cindy_blackman.png" alt = "Cindy Blackman">
+                <img class = "container-img" id = "artist-picture" src = "images/cindy_blackman.png" alt = "Cindy Blackman">
                 <div class = "container-content">
-                    <div class = "container-content-header">    
-                        <img class = "container-img-1" src = "images/cindy_blackman_portrait.jpg" alt = "Cindy Blackman Portra"> 
-                        <h1>Cindy Blackman</h1>
+                    <div class = "image-container">
+                        <img id = "cindy" src = "images/cindy_blackman_portrait.jpg" alt = "Cindy Blackman Portrait"> 
+                        <img id = "evelyn" src = "images/evelyn_glennie_portrait.jpg" alt = "Evelyn Glennie Portrait"> 
+                        <img id = "martin" src = "images/martin_grubinger_portrait.jpg" alt = "Martin Grubinger Portrait"> 
                     </div>
-                    <p>Cindy Blackman is a highly acclaimed American jazz drummer who has made significant contributions to the world of music. Her dynamic playing style, characterized by a combination of power, precision, and finesse, has earned her widespread acclaim and admiration from both critics and fellow musicians.</p>   
+
+                    <h1 id = "artist-name">Cindy Blackman</h1>
+                    <p id = "desc">Cindy Blackman is a highly acclaimed American jazz drummer who has made significant contributions to the world of music. Her dynamic playing style, characterized by a combination of power, precision, and finesse, has earned her widespread acclaim and admiration from both critics and fellow musicians.</p>   
                 </div>
             </div>
         </div>
         <div class = "title-container">
             <h1>Professional Brands</h1>
         </div>
-        <div class = "main-container">
-            <div class = "container-1">
-                <img class = "container-img" src = "images/katy_perry.png" alt = "Katy Perry">
-                <div class = "container-content">
-                    <h1>Katy Perry</h1>
-                    <p>Katy Perry started designing shoes back in 2016. With 39 different products and every type of shoe, Katy continues to ‘wow’ with her imaginative designs. While there is something out there for everyone, her shoes are known for their ostentatious, artistic flare. Though she mainly focuses on footwear, she has also ventured into the realm of handbags and offers a few chic options. Her products range in price from $15 flip-flops to $159 boots.</p>   
+        <div class = "main-card-container">
+            <div class = "card-container">
+                <div class = "card">
+                    <div class = "front">
+                        <img src = "images/katy_perry.png" alt = "katy perry">
+                    </div>
+                    <div class = "back">
+                        <h1>Katy Perry Collections</h1>
+                        <p>Katy Perry Collections is a trendy and vibrant fashion brand inspired by the renowned pop artist, Katy Perry. Known for her bold and eclectic style, the collections mirror Katy's personality, featuring an array of playful designs, eye-catching colors, and unique patterns.</p>
+                        <div class = "listen-btn">
+                            <a href="https://katyperrycollections.com/" target="_blank">Visit Site</a>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>    
+            <div class = "card-container">
+                <div class = "card">
+                    <div class = "front">
+                        <img src = "images/fenty_beuty.png" alt = "fenty beuty">
+                    </div>
+                    <div class = "back">
+                        <h1>Fenty Beuty</h1>
+                        <p>Fenty Beauty is a revolutionary cosmetics brand founded by global superstar Rihanna. Launched in 2017, the brand quickly made a significant impact on the beauty industry by championing inclusivity and diversity. Fenty Beauty is celebrated for its wide range of foundation shades catering to various skin tones, making it accessible and empowering for people of all ethnicities.</p>
+                        <div class = "listen-btn">
+                            <a href="https://fentybeauty.com/" target="_blank">Visit Site</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class = "card-container">
+                <div class = "card">
+                    <div class = "front">
+                        <img src = "images/rare_beuty.png" alt = "rare beuty">
+                    </div>
+                    <div class = "back">
+                        <h1>Rare Beuty</h1>
+                        <p>Rare Beauty is a popular cosmetics brand founded by singer and actress Selena Gomez. Launched with a powerful message of embracing individuality, Rare Beauty aims to redefine beauty standards and promote self-acceptance. The brand's diverse product line includes a wide range of makeup items, from skin-loving foundations to vibrant lip colors, all crafted to enhance natural beauty and encourage self-expression.</p>
+                        <div class = "listen-btn">
+                            <a href="https://www.rarebeauty.com/" target="_blank">Visit Site</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- simulation -->
@@ -219,6 +257,28 @@
             <li class = "b-key key" data-key = "b"><span>b</span></li>
             <li class = "h-c-key key" data-key = "h-c"><span>c</span></li>
         </ul>    
+        <div class = "title-container">
+            <h1>Guitar Hero Simulation</h1>
+        </div>
+        <div class = "score-container">
+            <p id = "score-text">Score: 0</p>   
+            <p id = "lives-text">Lives: 3</p> 
+        </div>
+        <div class = "guitar-hero">
+            <div class = "guitar-hero-container">
+                <div class = "play-screen-container">
+                    <img class = "play-screen" src = "images/play_screen.png" alt = "play screen">
+                    <p id = "play-text">CLICK TO PLAY</p>
+                </div>
+
+                <img id = "guitar-hero-bg" src = "images/guitar_bg.png" alt = "guitar hero background">
+
+                <div id = "note-1" class = "guitar-note"></div>
+                <div id = "note-2" class = "guitar-note"></div>
+                <div id = "note-3" class = "guitar-note"></div>
+                <div id = "note-4" class = "guitar-note"></div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
