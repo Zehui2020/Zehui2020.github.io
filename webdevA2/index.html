@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Percussion</title>
+    <link rel = "stylesheet" href = "style.css">
+    <script src = "script.js" defer></script>
+</head>
+<body>
+    <!-- header -->
+    <div class = "header">
+        <div class = "menu">
+            <img src = "images/menu.png" alt = "menu icon">
+        </div>
+        <div class = "header-home">
+            <a id = "homeBtn">Home</a>
+        </div>
+        <div class = "header-others">
+            <a class = "instrumentBtn">Instruments</a>
+            <a class = "professionBtn">Profession</a>
+            <a class = "simulationsBtn">Simulations</a>
+        </div>
+    </div>
+    <div>
+        <div class = "header expand">
+            <a class = "move-left instrumentBtn">Instruments</a>
+            <a class = "move-left professionBtn">Profession</a>
+            <a class = "move-left move-up simulationsBtn">Simulations</a>
+        </div>
+    </div>
+
+    <!-- home page -->
+    <div class = "page" id = "home">
+        <div class = "percussion-family-container">
+            <img src = "images/percussion1.jpg" alt = "percussion image" id = "banner-image">
+            <div class = "slideshow-details">
+                <h1 id = "percussion-family-text">The Percussion Family</h1>
+                <div class= "controls">
+                    <img src = "images/left.png" alt = "left arrow" id = "left">
+                    <img src = "images/pause.png" alt = "play button" id = "play">
+                    <img src = "images/right.png" alt = "right arrow" id = "right">
+                </div>
+            </div>
+        </div>
+        <div class = "main-container">
+            <div class = "container">
+                <img class = "container-img" src = "images/drum_kit.png" alt = "drum kit">
+                <div class = "container-content">
+                    <h1>How Expensive Is A Percussion Instrument?</h1>
+                    <p>The drum kit is one of the most well-known instrument in the Percussion section. However, they are one of the most expensive instruments in Percussion, averaging at about $300 - $600.</p>
+                    <a class = "instrumentBtn">Learn More</a>
+                </div>
+            </div>
+        </div>
+        <div class = "main-container" id = "pro">
+            <div class = "container">
+                <img class = "container-img" src = "images/drummer.jpg" alt = "drummer image">
+                <div class = "container-content">
+                    <h1>The Pro Industry</h1>
+                    <p>There are many Professional Percussionist out there in the world! Who are they and what have they done during their career?</p>
+                    <a class = "professionBtn">Learn More</a>
+                </div>
+            </div>
+        </div>    
+        <div class = "main-container" id = "xylo">
+            <div class = "container">
+                <img class = "container-img" src = "images/xylophone.png" alt = "xylophone">
+                <div class = "container-content">
+                    <h1>How Do You Play The Xylophone?</h1>
+                    <p>The xylophone is a fascinating musical instrument known for its bright and resonant sound. The xylophone's versatility has led to its use in a wide range of musical genres. It has found a place in orchestras, marching bands, and even popular music recordings!</p>
+                    <a class = "simulationsBtn">Learn More</a>
+                </div>
+            </div>
+        </div>    
+        <div class = "qr-code">
+            <img src = "images/code.png" alt = "qr code">
+        </div>
+    </div>
+    
+    <!-- instruments -->
+    <div class = "page" id = "instruments">
+        <div class = "title-container">
+            <h1>Common Percussion Instruments</h1>
+        </div>
+        <div class = "main-card-container">
+            <div class = "card-container">
+                <div class = "card">
+                    <div class = "front">
+                        <img src = "images/drum_kit.png" alt = "drumkit">
+                    </div>
+                    <div class = "back">
+                        <h1>The Drum Kit</h1>
+                        <p>The drum kit's origins can be traced back to the late 1800s. During this time, individual percussion instruments like bass drums, snare drums, and cymbals were arranged in marching bands and orchestras, but they were not yet combined into a single instrument setup. As times change and more genres appear, the drum kit we know of today is made!</p>
+                        <div class = "listen-btn" data-key = "drums">
+                            <p>Listen</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class = "card-container">
+                <div class = "card">
+                    <div class = "front">
+                        <img src = "images/stylophone.png" alt = "stylophone">
+                    </div>
+                    <div class = "back">
+                        <h1>The Stylophone</h1>
+                        <p>The stylophone, a pocket-sized wonder, brings a playful twist to the world of music. Invented in the 1960s, it earned fame as the "pocket electronic organ" due to its unique playability using a stylus. With a simple tap on the metal keys, it unleashes an array of electronic sounds, making it a favorite among musicians and enthusiasts alike. From David Bowie's iconic "Space Oddity" to modern-day melodies, the stylophone's charmingly retro tones continue to inspire creativity and add a touch of nostalgia to the musical landscape.</p>
+                        <div class = "listen-btn" data-key = "stylophone">
+                            <p>Listen</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class = "card-container">
+                <div class = "card">
+                    <div class = "front">
+                        <img src = "images/xylophone.png" alt = "xylophone">
+                    </div>
+                    <div class = "back">
+                        <h1>The Xylophone</h1>
+                        <p>The xylophone, an enchanting musical instrument, resonates with a whimsical charm that captivates both young and old. As each wooden bar is struck, a magical cascade of vibrant notes dances through the air, creating melodies that stir the soul. With its origins tracing back to ancient civilizations, the xylophone's timeless allure continues to echo through cultures worldwide, making it a delightful symphony of history and music in perfect harmony.</p>
+                        <div class = "listen-btn" data-key = "xylophone">
+                            <p>Listen</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class = "title-container">
+            <h1>Less Common Percussion Instruments</h1>
+        </div>
+        <div class = "main-card-container">
+            <div class = "card-container">
+                <div class = "card">
+                    <div class = "front">
+                        <img src = "images/kalimba.png" alt = "kalimba">
+                    </div>
+                    <div class = "back">
+                        <h1>Kalimba</h1>
+                        <p>The origins of the kalimba can be traced back to ancient African civilizations, dating back thousands of years! The Kalimba is an extremely unique instrument and is criminally underrated. It has a soft and mellow sound to it that is soothing to listen to. The melancholic sound evokes strong emotions during emotional scenes and is one of the most popular instruments used to create game music when depicting a flashback or a sad scene.</p>
+                        <div class = "listen-btn" data-key = "kalimba">
+                            <p>Listen</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class = "card-container">
+                <div class = "card">
+                    <div class = "front">
+                        <img src = "images/sleigh_bells.png" alt = "sleigh bells">
+                    </div>
+                    <div class = "back">
+                        <h1>Sleigh Bells</h1>
+                        <p>The sleigh bell holds cultural significance in various regions around the world. In some European countries, such as Germany and Austria, the sound of sleigh bells is associated with the arrival of Saint Nicholas or other gift-bringing figures during the holiday season. In North America, the sound of sleigh bells is often associated with sleigh rides and is frequently depicted in Christmas songs and stories.</p>
+                        <div class = "listen-btn" data-key = "bells">
+                            <p>Listen</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class = "card-container">
+                <div class = "card">
+                    <div class = "front">
+                        <img src = "images/conga.png" alt = "conga">
+                    </div>
+                    <div class = "back">
+                        <h1>Conga</h1>
+                        <p>The conga drum's origins can be traced back to Africa, where similar drums were played as part of traditional music and dance rituals. These drums were brought to the Americas through the transatlantic slave trade, with enslaved Africans preserving and adapting their musical traditions in their new cultural contexts.</p>
+                        <div class = "listen-btn" data-key = "conga">
+                            <p>Listen</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- professional -->
+    <div class = "page" id = "professional">
+        <div class = "title-container">
+            <h1>Professional Percussionists</h1>
+        </div>
+        <div class = "main-container">
+            <div class = "container-1">
+                <img class = "container-img" id = "artist-picture" src = "images/cindy_blackman.png" alt = "Cindy Blackman">
+                <div class = "container-content">
+                    <div class = "image-container">
+                        <img id = "cindy" src = "images/cindy_blackman_portrait.jpg" alt = "Cindy Blackman Portrait"> 
+                        <img id = "evelyn" src = "images/evelyn_glennie_portrait.jpg" alt = "Evelyn Glennie Portrait"> 
+                        <img id = "martin" src = "images/martin_grubinger_portrait.jpg" alt = "Martin Grubinger Portrait"> 
+                    </div>
+
+                    <h1 id = "artist-name">Cindy Blackman</h1>
+                    <p id = "desc">Cindy Blackman is a highly acclaimed American jazz drummer who has made significant contributions to the world of music. Her dynamic playing style, characterized by a combination of power, precision, and finesse, has earned her widespread acclaim and admiration from both critics and fellow musicians.</p>   
+                </div>
+            </div>
+        </div>
+        <div class = "title-container">
+            <h1>Professional Brands</h1>
+        </div>
+        <div class = "main-card-container">
+            <div class = "card-container">
+                <div class = "card">
+                    <div class = "front">
+                        <img src = "images/katy_perry.png" alt = "katy perry">
+                    </div>
+                    <div class = "back">
+                        <h1>Katy Perry Collections</h1>
+                        <p>Katy Perry Collections is a trendy and vibrant fashion brand inspired by the renowned pop artist, Katy Perry. Known for her bold and eclectic style, the collections mirror Katy's personality, featuring an array of playful designs, eye-catching colors, and unique patterns.</p>
+                        <div class = "listen-btn">
+                            <a href="https://katyperrycollections.com/" target="_blank">Visit Site</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class = "card-container">
+                <div class = "card">
+                    <div class = "front">
+                        <img src = "images/fenty_beuty.png" alt = "fenty beuty">
+                    </div>
+                    <div class = "back">
+                        <h1>Fenty Beuty</h1>
+                        <p>Fenty Beauty is a revolutionary cosmetics brand founded by global superstar Rihanna. Launched in 2017, the brand quickly made a significant impact on the beauty industry by championing inclusivity and diversity. Fenty Beauty is celebrated for its wide range of foundation shades catering to various skin tones, making it accessible and empowering for people of all ethnicities.</p>
+                        <div class = "listen-btn">
+                            <a href="https://fentybeauty.com/" target="_blank">Visit Site</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class = "card-container">
+                <div class = "card">
+                    <div class = "front">
+                        <img src = "images/rare_beuty.png" alt = "rare beuty">
+                    </div>
+                    <div class = "back">
+                        <h1>Rare Beuty</h1>
+                        <p>Rare Beauty is a popular cosmetics brand founded by singer and actress Selena Gomez. Launched with a powerful message of embracing individuality, Rare Beauty aims to redefine beauty standards and promote self-acceptance. The brand's diverse product line includes a wide range of makeup items, from skin-loving foundations to vibrant lip colors, all crafted to enhance natural beauty and encourage self-expression.</p>
+                        <div class = "listen-btn">
+                            <a href="https://www.rarebeauty.com/" target="_blank">Visit Site</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- simulation -->
+    <div class = "page" id = "simulation">
+        <div class = "title-container">
+            <h1>Xylophone Simulation</h1>
+        </div>
+        <ul class = "xylophone">
+            <li class = "c-key key" data-key = "c"><span>c</span></li>
+            <li class = "d-key key" data-key = "d"><span>d</span></li>
+            <li class = "e-key key" data-key = "e"><span>e</span></li>
+            <li class = "f-key key" data-key = "f"><span>f</span></li>
+            <li class = "g-key key" data-key = "g"><span>g</span></li>
+            <li class = "a-key key" data-key = "a"><span>a</span></li>
+            <li class = "b-key key" data-key = "b"><span>b</span></li>
+            <li class = "h-c-key key" data-key = "h-c"><span>c</span></li>
+        </ul>    
+        <div class = "title-container">
+            <h1>Guitar Hero Simulation</h1>
+        </div>
+        <div class = "score-container">
+            <p id = "score-text">Score: 0</p>   
+            <p id = "lives-text">Lives: 3</p> 
+        </div>
+        <div class = "guitar-hero">
+            <div class = "guitar-hero-container">
+                <div class = "play-screen-container">
+                    <img class = "play-screen" src = "images/play_screen.png" alt = "play screen">
+                    <p id = "play-text">CLICK TO PLAY</p>
+                </div>
+
+                <img id = "guitar-hero-bg" src = "images/guitar_bg.png" alt = "guitar hero background">
+
+                <div id = "note-1" class = "guitar-note"></div>
+                <div id = "note-2" class = "guitar-note"></div>
+                <div id = "note-3" class = "guitar-note"></div>
+                <div id = "note-4" class = "guitar-note"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
