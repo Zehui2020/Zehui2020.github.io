@@ -118,6 +118,12 @@
     height: 40px;
 }
 
+.qr-code{
+    display: flex;
+    background-color: rgb(3, 0, 23);
+    justify-content: center;
+}
+
 /*Style the main card container to*/
 .main-card-container{
     display: flex;
